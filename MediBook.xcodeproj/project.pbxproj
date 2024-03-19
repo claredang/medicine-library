@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3138A0D2BA9A24B00E65F1C /* MediBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A0C2BA9A24B00E65F1C /* MediBookApp.swift */; };
+		C3138A0F2BA9A24B00E65F1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A0E2BA9A24B00E65F1C /* ContentView.swift */; };
+		C3138A112BA9A25100E65F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3138A102BA9A25100E65F1C /* Assets.xcassets */; };
+		C3138A142BA9A25100E65F1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3138A132BA9A25100E65F1C /* Preview Assets.xcassets */; };
+		C3138A1E2BA9A25200E65F1C /* MediBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A1D2BA9A25200E65F1C /* MediBookTests.swift */; };
+		C3138A282BA9A25200E65F1C /* MediBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A272BA9A25200E65F1C /* MediBookUITests.swift */; };
+		C3138A2A2BA9A25200E65F1C /* MediBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A292BA9A25200E65F1C /* MediBookUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3138A1A2BA9A25200E65F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3138A012BA9A24B00E65F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3138A082BA9A24B00E65F1C;
+			remoteInfo = MediBook;
+		};
+		C3138A242BA9A25200E65F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3138A012BA9A24B00E65F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3138A082BA9A24B00E65F1C;
+			remoteInfo = MediBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3138A092BA9A24B00E65F1C /* MediBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3138A0C2BA9A24B00E65F1C /* MediBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediBookApp.swift; sourceTree = "<group>"; };
+		C3138A0E2BA9A24B00E65F1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3138A102BA9A25100E65F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3138A132BA9A25100E65F1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3138A192BA9A25200E65F1C /* MediBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3138A1D2BA9A25200E65F1C /* MediBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediBookTests.swift; sourceTree = "<group>"; };
+		C3138A232BA9A25200E65F1C /* MediBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3138A272BA9A25200E65F1C /* MediBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediBookUITests.swift; sourceTree = "<group>"; };
+		C3138A292BA9A25200E65F1C /* MediBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3138A062BA9A24B00E65F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3138A162BA9A25200E65F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3138A202BA9A25200E65F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3138A002BA9A24B00E65F1C = {
+			isa = PBXGroup;
+			children = (
+				C3138A0B2BA9A24B00E65F1C /* MediBook */,
+				C3138A1C2BA9A25200E65F1C /* MediBookTests */,
+				C3138A262BA9A25200E65F1C /* MediBookUITests */,
+				C3138A0A2BA9A24B00E65F1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3138A0A2BA9A24B00E65F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3138A092BA9A24B00E65F1C /* MediBook.app */,
+				C3138A192BA9A25200E65F1C /* MediBookTests.xctest */,
+				C3138A232BA9A25200E65F1C /* MediBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3138A0B2BA9A24B00E65F1C /* MediBook */ = {
+			isa = PBXGroup;
+			children = (
+				C3138A0C2BA9A24B00E65F1C /* MediBookApp.swift */,
+				C3138A0E2BA9A24B00E65F1C /* ContentView.swift */,
+				C3138A102BA9A25100E65F1C /* Assets.xcassets */,
+				C3138A122BA9A25100E65F1C /* Preview Content */,
+			);
+			path = MediBook;
+			sourceTree = "<group>";
+		};
+		C3138A122BA9A25100E65F1C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C3138A132BA9A25100E65F1C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3138A1C2BA9A25200E65F1C /* MediBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3138A1D2BA9A25200E65F1C /* MediBookTests.swift */,
+			);
+			path = MediBookTests;
+			sourceTree = "<group>";
+		};
+		C3138A262BA9A25200E65F1C /* MediBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3138A272BA9A25200E65F1C /* MediBookUITests.swift */,
+				C3138A292BA9A25200E65F1C /* MediBookUITestsLaunchTests.swift */,
+			);
+			path = MediBookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3138A082BA9A24B00E65F1C /* MediBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3138A2D2BA9A25200E65F1C /* Build configuration list for PBXNativeTarget "MediBook" */;
+			buildPhases = (
+				C3138A052BA9A24B00E65F1C /* Sources */,
+				C3138A062BA9A24B00E65F1C /* Frameworks */,
+				C3138A072BA9A24B00E65F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediBook;
+			productName = MediBook;
+			productReference = C3138A092BA9A24B00E65F1C /* MediBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3138A182BA9A25200E65F1C /* MediBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3138A302BA9A25200E65F1C /* Build configuration list for PBXNativeTarget "MediBookTests" */;
+			buildPhases = (
+				C3138A152BA9A25200E65F1C /* Sources */,
+				C3138A162BA9A25200E65F1C /* Frameworks */,
+				C3138A172BA9A25200E65F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3138A1B2BA9A25200E65F1C /* PBXTargetDependency */,
+			);
+			name = MediBookTests;
+			productName = MediBookTests;
+			productReference = C3138A192BA9A25200E65F1C /* MediBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3138A222BA9A25200E65F1C /* MediBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3138A332BA9A25200E65F1C /* Build configuration list for PBXNativeTarget "MediBookUITests" */;
+			buildPhases = (
+				C3138A1F2BA9A25200E65F1C /* Sources */,
+				C3138A202BA9A25200E65F1C /* Frameworks */,
+				C3138A212BA9A25200E65F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3138A252BA9A25200E65F1C /* PBXTargetDependency */,
+			);
+			name = MediBookUITests;
+			productName = MediBookUITests;
+			productReference = C3138A232BA9A25200E65F1C /* MediBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3138A012BA9A24B00E65F1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C3138A082BA9A24B00E65F1C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					C3138A182BA9A25200E65F1C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C3138A082BA9A24B00E65F1C;
+					};
+					C3138A222BA9A25200E65F1C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C3138A082BA9A24B00E65F1C;
+					};
+				};
+			};
+			buildConfigurationList = C3138A042BA9A24B00E65F1C /* Build configuration list for PBXProject "MediBook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3138A002BA9A24B00E65F1C;
+			productRefGroup = C3138A0A2BA9A24B00E65F1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3138A082BA9A24B00E65F1C /* MediBook */,
+				C3138A182BA9A25200E65F1C /* MediBookTests */,
+				C3138A222BA9A25200E65F1C /* MediBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3138A072BA9A24B00E65F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3138A142BA9A25100E65F1C /* Preview Assets.xcassets in Resources */,
+				C3138A112BA9A25100E65F1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3138A172BA9A25200E65F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3138A212BA9A25200E65F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3138A052BA9A24B00E65F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3138A0F2BA9A24B00E65F1C /* ContentView.swift in Sources */,
+				C3138A0D2BA9A24B00E65F1C /* MediBookApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3138A152BA9A25200E65F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3138A1E2BA9A25200E65F1C /* MediBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3138A1F2BA9A25200E65F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3138A2A2BA9A25200E65F1C /* MediBookUITestsLaunchTests.swift in Sources */,
+				C3138A282BA9A25200E65F1C /* MediBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3138A1B2BA9A25200E65F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3138A082BA9A24B00E65F1C /* MediBook */;
+			targetProxy = C3138A1A2BA9A25200E65F1C /* PBXContainerItemProxy */;
+		};
+		C3138A252BA9A25200E65F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3138A082BA9A24B00E65F1C /* MediBook */;
+			targetProxy = C3138A242BA9A25200E65F1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C3138A2B2BA9A25200E65F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3138A2C2BA9A25200E65F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3138A2E2BA9A25200E65F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MediBook/Preview Content\"";
+				DEVELOPMENT_TEAM = BLZYQCF3XD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Clare.MediBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3138A2F2BA9A25200E65F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MediBook/Preview Content\"";
+				DEVELOPMENT_TEAM = BLZYQCF3XD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Clare.MediBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3138A312BA9A25200E65F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLZYQCF3XD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Clare.MediBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediBook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MediBook";
+			};
+			name = Debug;
+		};
+		C3138A322BA9A25200E65F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLZYQCF3XD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Clare.MediBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediBook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MediBook";
+			};
+			name = Release;
+		};
+		C3138A342BA9A25200E65F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLZYQCF3XD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Clare.MediBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediBook;
+			};
+			name = Debug;
+		};
+		C3138A352BA9A25200E65F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLZYQCF3XD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Clare.MediBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3138A042BA9A24B00E65F1C /* Build configuration list for PBXProject "MediBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3138A2B2BA9A25200E65F1C /* Debug */,
+				C3138A2C2BA9A25200E65F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3138A2D2BA9A25200E65F1C /* Build configuration list for PBXNativeTarget "MediBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3138A2E2BA9A25200E65F1C /* Debug */,
+				C3138A2F2BA9A25200E65F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3138A302BA9A25200E65F1C /* Build configuration list for PBXNativeTarget "MediBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3138A312BA9A25200E65F1C /* Debug */,
+				C3138A322BA9A25200E65F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3138A332BA9A25200E65F1C /* Build configuration list for PBXNativeTarget "MediBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3138A342BA9A25200E65F1C /* Debug */,
+				C3138A352BA9A25200E65F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3138A012BA9A24B00E65F1C /* Project object */;
+}
