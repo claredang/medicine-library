@@ -3,39 +3,58 @@ import SwiftUI
 struct MedicineEditForm: View {
     @State private var editedMedicine: MedicineEntry
     @StateObject private var viewModel = MedicineViewModel()
-        init(item: MedicineEntry) {
-            self._editedMedicine = State(initialValue: item)
-            print("edit to do2: ", self._editedMedicine)
-        }
-        
-        var body: some View {
-            VStack {
-                TextField("Name", text: Binding(
-                    get: { self.editedMedicine.name },
-                    set: { self.editedMedicine.name = $0 }
-                ))
+    @State private var isNavigating = false
+
+//    init(item: MedicineEntry) {
+//        self._editedMedicine = State(initialValue: item)
+//    }
+    
+    init(item: MedicineEntry) {
+           self._editedMedicine = State(initialValue: item)
+       }
+    
+    var body: some View {
+        VStack {
+            TextField("Name", text: $editedMedicine.name)
                 .multilineTextAlignment(.trailing)
-//                TextField("Amount", value: $editedTodo.amount, formatter: NumberFormatter())
-//                TextField("Price", value: $editedTodo.price, formatter: NumberFormatter())
-//                TextField("Metric", text: $editedTodo.metric)
-                Button("Save") {
-                    // Call function to save updated details
-                    saveEditedTodo()
-                }
+            TextField("Amount", value: $editedMedicine.amount, formatter: NumberFormatter())
+            TextField("Price", value: $editedMedicine.price, formatter: NumberFormatter())
+            TextField("Metric", text: $editedMedicine.metric)
+            
+            Button("Save") {
+                updateMedicine()
             }
-            .padding()
+            Button("Delete") {
+               deleteMedicine()
+            }
+            
+            NavigationLink(destination: MedicineLibrary(), isActive: $isNavigating) {
+                EmptyView() // Invisible view to trigger NavigationLink
+            }
+            .hidden() // Hide the NavigationLink view
         }
-        
-        func saveEditedTodo() {
-            // Save updated details to the database
-            // You need to implement the logic to save updated details back to the database
-            print("Saving edited todo:", editedMedicine)
-            // Here you can implement the logic to save the updated todo to your database
-            viewModel.updateMedicine()
-        }
+        .padding()
+    }
+    
+    func updateMedicine() {
+        print("Saving edited medicine:", editedMedicine)
+        viewModel.updateMedicine(medicine: editedMedicine)
+        isNavigating = true
+    }
+    
+    func deleteMedicine() {
+        print("delete medicine", editedMedicine)
+        viewModel.deleteMedicine(medicine: editedMedicine)
+        isNavigating = true
+    }
 }
 
-#Preview {
-//    MedicineEditForm(item: MedicineEntry())
-    MedicineEntry(name: "Sample Name", amount: 100, price: 200, metric: "Sample Metric") as! any View
+struct MedicineEditForm_Previews: PreviewProvider {
+    static var previews: some View {
+//        let sampleMedicine = MedicineEntry(item)
+        NavigationView {
+            MedicineEditForm(item: MedicineEntry(name: "Sample Name", amount: 100, price: 200, metric: "Sample Metric"))
+//            MedicineEditForm(item: sampleMedicine)
+        }
+    }
 }

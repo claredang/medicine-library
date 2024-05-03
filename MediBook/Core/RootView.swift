@@ -4,8 +4,12 @@ struct RootView: View {
     @State private var showSignInView: Bool = false
     var body: some View {
         ZStack {
-            NavigationStack {
-                SettingsView(showSignInView: $showSignInView)
+            if !showSignInView {
+                NavigationStack {
+//                    ProfileView(showSignInView: $showSignInView)
+//                    SettingsView(showSignInView: $showSignInView)
+                    MedicineLibrary()
+                }
             }
         }
         .onAppear {

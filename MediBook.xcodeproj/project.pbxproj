@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C31145FD2BA9C70800B9106F /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31145FC2BA9C70800B9106F /* SignInEmailView.swift */; };
+		C31145FF2BA9CC4B00B9106F /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31145FE2BA9CC4B00B9106F /* AuthenticationManager.swift */; };
+		C31146022BA9D26400B9106F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C31146012BA9D26400B9106F /* FirebaseAuth */; };
+		C31146042BAA898E00B9106F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31146032BAA898D00B9106F /* RootView.swift */; };
+		C31146062BAA8C9300B9106F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31146052BAA8C9300B9106F /* SettingsView.swift */; };
 		C3138A0D2BA9A24B00E65F1C /* MediBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A0C2BA9A24B00E65F1C /* MediBookApp.swift */; };
 		C3138A0F2BA9A24B00E65F1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A0E2BA9A24B00E65F1C /* ContentView.swift */; };
 		C3138A112BA9A25100E65F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3138A102BA9A25100E65F1C /* Assets.xcassets */; };
@@ -14,6 +19,22 @@
 		C3138A1E2BA9A25200E65F1C /* MediBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A1D2BA9A25200E65F1C /* MediBookTests.swift */; };
 		C3138A282BA9A25200E65F1C /* MediBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A272BA9A25200E65F1C /* MediBookUITests.swift */; };
 		C3138A2A2BA9A25200E65F1C /* MediBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A292BA9A25200E65F1C /* MediBookUITestsLaunchTests.swift */; };
+		C3138A3A2BA9BF3500E65F1C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C3138A392BA9BF3500E65F1C /* FirebaseAnalytics */; };
+		C3138A3C2BA9BF3500E65F1C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = C3138A3B2BA9BF3500E65F1C /* FirebaseAnalyticsOnDeviceConversion */; };
+		C3138A3E2BA9BF3500E65F1C /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C3138A3D2BA9BF3500E65F1C /* FirebaseAnalyticsSwift */; };
+		C3138A402BA9BF3500E65F1C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = C3138A3F2BA9BF3500E65F1C /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		C3138A422BA9BF3500E65F1C /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = C3138A412BA9BF3500E65F1C /* FirebaseAppCheck */; };
+		C3138A442BA9BF9200E65F1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3138A432BA9BF9200E65F1C /* GoogleService-Info.plist */; };
+		C3138A472BA9C28900E65F1C /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3138A462BA9C28900E65F1C /* AuthenticationView.swift */; };
+		C398873D2BAC75D80072147A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C398873C2BAC75D80072147A /* FirebaseFirestore */; };
+		C398873F2BAC75E20072147A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C398873E2BAC75E20072147A /* FirebaseFirestoreSwift */; };
+		C39887432BAC77E80072147A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39887422BAC77E80072147A /* SettingsViewModel.swift */; };
+		C39887472BAC78F80072147A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39887462BAC78F80072147A /* ProfileView.swift */; };
+		C398874A2BAC7FDA0072147A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39887492BAC7FDA0072147A /* UserManager.swift */; };
+		C398874C2BAD46AB0072147A /* MedicineForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C398874B2BAD46AB0072147A /* MedicineForm.swift */; };
+		C398874E2BB2BEA00072147A /* MedicineEditForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C398874D2BB2BEA00072147A /* MedicineEditForm.swift */; };
+		C39887502BB3CBE30072147A /* MedicineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C398874F2BB3CBE30072147A /* MedicineManager.swift */; };
+		C39887532BB3DAC60072147A /* MedicineLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39887522BB3DAC60072147A /* MedicineLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C31145FC2BA9C70800B9106F /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		C31145FE2BA9CC4B00B9106F /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		C31146032BAA898D00B9106F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C31146052BAA8C9300B9106F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C3138A092BA9A24B00E65F1C /* MediBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3138A0C2BA9A24B00E65F1C /* MediBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediBookApp.swift; sourceTree = "<group>"; };
 		C3138A0E2BA9A24B00E65F1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +69,15 @@
 		C3138A232BA9A25200E65F1C /* MediBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3138A272BA9A25200E65F1C /* MediBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediBookUITests.swift; sourceTree = "<group>"; };
 		C3138A292BA9A25200E65F1C /* MediBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3138A432BA9BF9200E65F1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3138A462BA9C28900E65F1C /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		C39887422BAC77E80072147A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		C39887462BAC78F80072147A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C39887492BAC7FDA0072147A /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		C398874B2BAD46AB0072147A /* MedicineForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineForm.swift; sourceTree = "<group>"; };
+		C398874D2BB2BEA00072147A /* MedicineEditForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineEditForm.swift; sourceTree = "<group>"; };
+		C398874F2BB3CBE30072147A /* MedicineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineManager.swift; sourceTree = "<group>"; };
+		C39887522BB3DAC60072147A /* MedicineLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +85,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3138A3E2BA9BF3500E65F1C /* FirebaseAnalyticsSwift in Frameworks */,
+				C31146022BA9D26400B9106F /* FirebaseAuth in Frameworks */,
+				C3138A3A2BA9BF3500E65F1C /* FirebaseAnalytics in Frameworks */,
+				C3138A3C2BA9BF3500E65F1C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				C3138A422BA9BF3500E65F1C /* FirebaseAppCheck in Frameworks */,
+				C3138A402BA9BF3500E65F1C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				C398873D2BAC75D80072147A /* FirebaseFirestore in Frameworks */,
+				C398873F2BAC75E20072147A /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +113,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C31146002BA9D26400B9106F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3138A002BA9A24B00E65F1C = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +127,7 @@
 				C3138A1C2BA9A25200E65F1C /* MediBookTests */,
 				C3138A262BA9A25200E65F1C /* MediBookUITests */,
 				C3138A0A2BA9A24B00E65F1C /* Products */,
+				C31146002BA9D26400B9106F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,7 +144,11 @@
 		C3138A0B2BA9A24B00E65F1C /* MediBook */ = {
 			isa = PBXGroup;
 			children = (
+				C3138A432BA9BF9200E65F1C /* GoogleService-Info.plist */,
 				C3138A0C2BA9A24B00E65F1C /* MediBookApp.swift */,
+				C39887482BAC7F0A0072147A /* Firestore */,
+				C39887402BAC76C60072147A /* Core */,
+				C3138A452BA9C25000E65F1C /* Authentication */,
 				C3138A0E2BA9A24B00E65F1C /* ContentView.swift */,
 				C3138A102BA9A25100E65F1C /* Assets.xcassets */,
 				C3138A122BA9A25100E65F1C /* Preview Content */,
@@ -127,6 +181,71 @@
 			path = MediBookUITests;
 			sourceTree = "<group>";
 		};
+		C3138A452BA9C25000E65F1C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C31145FE2BA9CC4B00B9106F /* AuthenticationManager.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C39887402BAC76C60072147A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C39887512BB3D7400072147A /* Medicine */,
+				C39887452BAC78D10072147A /* Profile */,
+				C39887442BAC781D0072147A /* Authentication */,
+				C39887412BAC77A30072147A /* Settings */,
+				C31146032BAA898D00B9106F /* RootView.swift */,
+				C31145FC2BA9C70800B9106F /* SignInEmailView.swift */,
+				C3138A462BA9C28900E65F1C /* AuthenticationView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C39887412BAC77A30072147A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C31146052BAA8C9300B9106F /* SettingsView.swift */,
+				C39887422BAC77E80072147A /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C39887442BAC781D0072147A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C39887452BAC78D10072147A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C39887462BAC78F80072147A /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C39887482BAC7F0A0072147A /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				C39887492BAC7FDA0072147A /* UserManager.swift */,
+				C398874F2BB3CBE30072147A /* MedicineManager.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		C39887512BB3D7400072147A /* Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				C398874B2BAD46AB0072147A /* MedicineForm.swift */,
+				C398874D2BB2BEA00072147A /* MedicineEditForm.swift */,
+				C39887522BB3DAC60072147A /* MedicineLibrary.swift */,
+			);
+			path = Medicine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +262,16 @@
 			dependencies = (
 			);
 			name = MediBook;
+			packageProductDependencies = (
+				C3138A392BA9BF3500E65F1C /* FirebaseAnalytics */,
+				C3138A3B2BA9BF3500E65F1C /* FirebaseAnalyticsOnDeviceConversion */,
+				C3138A3D2BA9BF3500E65F1C /* FirebaseAnalyticsSwift */,
+				C3138A3F2BA9BF3500E65F1C /* FirebaseAnalyticsWithoutAdIdSupport */,
+				C3138A412BA9BF3500E65F1C /* FirebaseAppCheck */,
+				C31146012BA9D26400B9106F /* FirebaseAuth */,
+				C398873C2BAC75D80072147A /* FirebaseFirestore */,
+				C398873E2BAC75E20072147A /* FirebaseFirestoreSwift */,
+			);
 			productName = MediBook;
 			productReference = C3138A092BA9A24B00E65F1C /* MediBook.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +344,9 @@
 				Base,
 			);
 			mainGroup = C3138A002BA9A24B00E65F1C;
+			packageReferences = (
+				C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C3138A0A2BA9A24B00E65F1C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3138A142BA9A25100E65F1C /* Preview Assets.xcassets in Resources */,
+				C3138A442BA9BF9200E65F1C /* GoogleService-Info.plist in Resources */,
 				C3138A112BA9A25100E65F1C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +390,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39887502BB3CBE30072147A /* MedicineManager.swift in Sources */,
+				C39887532BB3DAC60072147A /* MedicineLibrary.swift in Sources */,
+				C31146062BAA8C9300B9106F /* SettingsView.swift in Sources */,
+				C398874E2BB2BEA00072147A /* MedicineEditForm.swift in Sources */,
+				C39887472BAC78F80072147A /* ProfileView.swift in Sources */,
 				C3138A0F2BA9A24B00E65F1C /* ContentView.swift in Sources */,
 				C3138A0D2BA9A24B00E65F1C /* MediBookApp.swift in Sources */,
+				C398874C2BAD46AB0072147A /* MedicineForm.swift in Sources */,
+				C31146042BAA898E00B9106F /* RootView.swift in Sources */,
+				C3138A472BA9C28900E65F1C /* AuthenticationView.swift in Sources */,
+				C31145FF2BA9CC4B00B9106F /* AuthenticationManager.swift in Sources */,
+				C31145FD2BA9C70800B9106F /* SignInEmailView.swift in Sources */,
+				C398874A2BAC7FDA0072147A /* UserManager.swift in Sources */,
+				C39887432BAC77E80072147A /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +733,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C31146012BA9D26400B9106F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C3138A392BA9BF3500E65F1C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C3138A3B2BA9BF3500E65F1C /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		C3138A3D2BA9BF3500E65F1C /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		C3138A3F2BA9BF3500E65F1C /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		C3138A412BA9BF3500E65F1C /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		C398873C2BAC75D80072147A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C398873E2BAC75E20072147A /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3138A382BA9BF3400E65F1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3138A012BA9A24B00E65F1C /* Project object */;
 }
