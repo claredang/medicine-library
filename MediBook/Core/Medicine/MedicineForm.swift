@@ -156,7 +156,6 @@ struct MedicineForm: View {
                         .fullScreenCover(isPresented: $isNavigating) {
                             MedicineLibrary()
                         }
-//                        .hidden()
                 }
                 
                             Button(action: {
@@ -172,8 +171,6 @@ struct MedicineForm: View {
     }
 }
 
-struct MedicineForm_Previews: PreviewProvider {
-    static var previews: some View {
-        MedicineForm()
-    }
+#Preview {
+    MedicineForm()
 }

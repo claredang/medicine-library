@@ -4,10 +4,6 @@ struct MedicineEditForm: View {
     @State private var editedMedicine: MedicineEntry
     @StateObject private var viewModel = MedicineViewModel()
     @State private var isNavigating = false
-
-//    init(item: MedicineEntry) {
-//        self._editedMedicine = State(initialValue: item)
-//    }
     
     init(item: MedicineEntry) {
            self._editedMedicine = State(initialValue: item)
@@ -49,12 +45,8 @@ struct MedicineEditForm: View {
     }
 }
 
-struct MedicineEditForm_Previews: PreviewProvider {
-    static var previews: some View {
-//        let sampleMedicine = MedicineEntry(item)
-        NavigationView {
-            MedicineEditForm(item: MedicineEntry(name: "Sample Name", amount: 100, price: 200, metric: "Sample Metric"))
-//            MedicineEditForm(item: sampleMedicine)
-        }
+#Preview {
+    NavigationView {
+        MedicineEditForm(item: MedicineEntry(name: "Sample Name", amount: 100, price: 200, metric: "Sample Metric"))
     }
 }
