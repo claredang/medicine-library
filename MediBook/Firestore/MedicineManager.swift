@@ -48,26 +48,23 @@ final class MedicineViewModel: ObservableObject {
         }
     }
     
-    func addNewMedicine(medicine: MedicineEntry) {
+    func addNewMedicine(medicine: MedicineEntry, completion: @escaping (Bool) -> Void) {
         // Check if the medicine with the same name already exists
         db.collection("medicine")
             .whereField("name", isEqualTo: medicine.name)
             .getDocuments { (querySnapshot, error) in
                 if let error = error {
                     print("Error checking for existing medicine: \(error.localizedDescription)")
+                    completion(false) // Indicate failure with completion handler
                     return
                 }
 
-                guard let documents = querySnapshot?.documents else {
-                    // No existing medicine found with the same name
-                    self.saveNewMedicine(medicine)
-                    return
-                }
-
-                // Medicine with the same name already exists
-                DispatchQueue.main.async {
-                    // Show alert or take appropriate action to notify the user
+                if let documents = querySnapshot?.documents, !documents.isEmpty {
                     print("Warning: Medicine with the name '\(medicine.name)' already exists.")
+                    completion(false)
+                } else {
+                    self.saveNewMedicine(medicine)
+                    completion(true)
                 }
             }
     }
@@ -122,11 +119,9 @@ final class MedicineViewModel: ObservableObject {
             // Extract the current name from the document data
             if let currentName = document.data()?["name"] as? String {
                 print("Current Medicine name: \(currentName)")
-
                 // Check if the name has changed
                 if medicine.name != currentName {
                     print("Medicine name has changed")
-
                     // Delete the existing medicine entry
                     medicineRef.delete { error in
                         if let error = error {
@@ -134,11 +129,16 @@ final class MedicineViewModel: ObservableObject {
                             return
                         }
                         // Add a new document with updated details
-                        self.addNewMedicine(medicine: medicine)
+                        self.addNewMedicine(medicine: medicine) { success in
+                            if success {
+                                print("Medicine updated successfully.")
+                            } else {
+                                print("Failed to update medicine.")
+                            }
+                        }
                     }
                 } else {
                     print("Medicine name has not changed")
-
                     // Update the existing medicine entry
                     medicineRef.setData([
                         "name": medicine.name,
