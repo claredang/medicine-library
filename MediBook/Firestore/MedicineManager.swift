@@ -223,5 +223,32 @@ final class MedicineViewModel: ObservableObject {
                     return MedicineEntry(id: id, name: name, amount: amount, price: price, metric: metric)
                 }
             }
-        }
+    }
+    
+    func searchMedicineLowStock(threshold: Int = 10) {
+        db.collection("medicine")
+            .whereField("amount", isLessThan: threshold)
+            .getDocuments { (querySnapshot, error) in
+                if let error = error {
+                    print("Error searching for low stock medicines: \(error.localizedDescription)")
+                    return
+                }
+
+                guard let documents = querySnapshot?.documents else {
+                    print("No low stock medicines found")
+                    return
+                }
+
+                self.medicines = documents.map { (queryDocumentSnapshot) -> MedicineEntry in
+                    let data = queryDocumentSnapshot.data()
+                    let id = queryDocumentSnapshot.documentID
+                    let name = data["name"] as? String ?? ""
+                    let amount = data["amount"] as? Int ?? 0
+                    let price = data["price"] as? Double ?? 0
+                    let metric = data["metric"] as? String ?? ""
+                    return MedicineEntry(id: id, name: name, amount: amount, price: price, metric: metric)
+                }
+            }
+    }
+
 }
