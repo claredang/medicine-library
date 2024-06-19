@@ -44,6 +44,14 @@ struct PrescriptionForm: View {
                                 .cornerRadius(5)
                         .padding()
                     }
+                    if !selectedMedicines.isEmpty {
+                        ForEach(selectedMedicines) { medicine in
+                            VStack(alignment: .leading) {
+                                Text("Medicine ID: \(medicine.medicine_id)")
+                                Text("Amount: \(medicine.amount_use)")
+                            }
+                        }
+                    }
                 }
                 
                 Button("Create Prescription") {
@@ -51,6 +59,10 @@ struct PrescriptionForm: View {
             }
         }
     }
+    func didSelectMedicines(_ medicines: [PrescriptionMedicine]) {
+            selectedMedicines = medicines
+        }
+
     
 }
 

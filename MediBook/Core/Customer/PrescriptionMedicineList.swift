@@ -1,11 +1,16 @@
 import SwiftUI
 
+protocol PrescriptionMedicineDelegate: AnyObject {
+    func didSelectMedicines(_ medicines: [PrescriptionMedicine])
+}
+
 struct PrescriptionMedicineList: View {
     @StateObject private var viewModel = MedicineViewModel()
     @State private var medicines: [MedicineEntry] = []
     @State private var searchText = ""
     @State private var selectedMedicine: MedicineEntry?
     @State private var amount: Int = 1
+    weak var delegate: PrescriptionMedicineDelegate?
 
     var body: some View {
         VStack {
@@ -19,6 +24,11 @@ struct PrescriptionMedicineList: View {
                         VStack(alignment: .leading) {
                             Text("Name: \(medicine.name)")
                             Text("Amount: \(medicine.amount)")
+                        }
+                        .contentShape(Rectangle()) // Makes the entire row tappable
+                        .onTapGesture {
+                            self.selectedMedicine = medicine
+//                            self.amount = medicine.amount // Set amount to current medicine's amount
                         }
                     }
                 }
@@ -49,13 +59,26 @@ struct PrescriptionMedicineList: View {
             }
 
             List {
-                ForEach(medicines, id: \.id) { medicine in
-                    VStack(alignment: .leading) {
-                        Text("Medicine Name: \(medicine.name)")
-                        Text("Amount: \(medicine.amount)")
+                ForEach($medicines, id: \.id) { $medicine in
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Medicine Name: \(medicine.name)")
+                            HStack {
+                                Text("Amount:")
+                                TextField("Amount", value: $medicine.amount, formatter: NumberFormatter())
+                                    .keyboardType(.numberPad)
+                                    .frame(width: 50)
+                            }
+                        }
+                        Spacer()
+                        Button(action: {
+                            deleteMedicine(medicine)
+                        }) {
+                            Image(systemName: "trash")
+                                .foregroundColor(.red)
+                        }
                     }
                 }
-                .onDelete(perform: deleteMedicine)
             }
             .listStyle(PlainListStyle())
 
@@ -95,8 +118,8 @@ struct PrescriptionMedicineList: View {
         amount = 1 // Reset amount after adding
     }
 
-    private func deleteMedicine(at offsets: IndexSet) {
-        medicines.remove(atOffsets: offsets)
+    private func deleteMedicine(_ medicine: MedicineEntry) {
+        medicines.removeAll { $0.id == medicine.id }
     }
 
     private func clearList() {
@@ -108,9 +131,8 @@ struct PrescriptionMedicineList: View {
     }
 }
 
-
-
-
 #Preview {
     PrescriptionMedicineList()
 }
+
+
