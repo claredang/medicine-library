@@ -35,6 +35,9 @@
 		C398874E2BB2BEA00072147A /* MedicineEditForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C398874D2BB2BEA00072147A /* MedicineEditForm.swift */; };
 		C39887502BB3CBE30072147A /* MedicineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C398874F2BB3CBE30072147A /* MedicineManager.swift */; };
 		C39887532BB3DAC60072147A /* MedicineLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39887522BB3DAC60072147A /* MedicineLibrary.swift */; };
+		C3B07C072BEA209500958DA4 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B07C062BEA209500958DA4 /* SearchBarView.swift */; };
+		C3B56CDD2C2374E100F91BC7 /* MedicineLowStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B56CDC2C2374E100F91BC7 /* MedicineLowStock.swift */; };
+		C3B56CE22C2375CF00F91BC7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B56CE12C2375CF00F91BC7 /* DashboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		C398874D2BB2BEA00072147A /* MedicineEditForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineEditForm.swift; sourceTree = "<group>"; };
 		C398874F2BB3CBE30072147A /* MedicineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineManager.swift; sourceTree = "<group>"; };
 		C39887522BB3DAC60072147A /* MedicineLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineLibrary.swift; sourceTree = "<group>"; };
+		C3B07C062BEA209500958DA4 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		C3B56CDC2C2374E100F91BC7 /* MedicineLowStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineLowStock.swift; sourceTree = "<group>"; };
+		C3B56CE12C2375CF00F91BC7 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,8 @@
 		C39887402BAC76C60072147A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C3B56CDF2C23759100F91BC7 /* Dashboard */,
+				C3B07C052BEA206100958DA4 /* ComponentView */,
 				C39887512BB3D7400072147A /* Medicine */,
 				C39887452BAC78D10072147A /* Profile */,
 				C39887442BAC781D0072147A /* Authentication */,
@@ -199,6 +207,7 @@
 				C31146032BAA898D00B9106F /* RootView.swift */,
 				C31145FC2BA9C70800B9106F /* SignInEmailView.swift */,
 				C3138A462BA9C28900E65F1C /* AuthenticationView.swift */,
+				C3B56CE12C2375CF00F91BC7 /* DashboardView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -242,8 +251,24 @@
 				C398874B2BAD46AB0072147A /* MedicineForm.swift */,
 				C398874D2BB2BEA00072147A /* MedicineEditForm.swift */,
 				C39887522BB3DAC60072147A /* MedicineLibrary.swift */,
+				C3B56CDC2C2374E100F91BC7 /* MedicineLowStock.swift */,
 			);
 			path = Medicine;
+			sourceTree = "<group>";
+		};
+		C3B07C052BEA206100958DA4 /* ComponentView */ = {
+			isa = PBXGroup;
+			children = (
+				C3B07C062BEA209500958DA4 /* SearchBarView.swift */,
+			);
+			path = ComponentView;
+			sourceTree = "<group>";
+		};
+		C3B56CDF2C23759100F91BC7 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,15 +420,18 @@
 				C31146062BAA8C9300B9106F /* SettingsView.swift in Sources */,
 				C398874E2BB2BEA00072147A /* MedicineEditForm.swift in Sources */,
 				C39887472BAC78F80072147A /* ProfileView.swift in Sources */,
+				C3B56CDD2C2374E100F91BC7 /* MedicineLowStock.swift in Sources */,
 				C3138A0F2BA9A24B00E65F1C /* ContentView.swift in Sources */,
 				C3138A0D2BA9A24B00E65F1C /* MediBookApp.swift in Sources */,
 				C398874C2BAD46AB0072147A /* MedicineForm.swift in Sources */,
 				C31146042BAA898E00B9106F /* RootView.swift in Sources */,
 				C3138A472BA9C28900E65F1C /* AuthenticationView.swift in Sources */,
+				C3B07C072BEA209500958DA4 /* SearchBarView.swift in Sources */,
 				C31145FF2BA9CC4B00B9106F /* AuthenticationManager.swift in Sources */,
 				C31145FD2BA9C70800B9106F /* SignInEmailView.swift in Sources */,
 				C398874A2BAC7FDA0072147A /* UserManager.swift in Sources */,
 				C39887432BAC77E80072147A /* SettingsViewModel.swift in Sources */,
+				C3B56CE22C2375CF00F91BC7 /* DashboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
