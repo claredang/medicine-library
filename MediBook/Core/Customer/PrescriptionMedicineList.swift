@@ -8,9 +8,10 @@ struct PrescriptionMedicineList: View {
     @StateObject private var viewModel = MedicineViewModel()
     @State private var medicines: [MedicineEntry] = []
     @State private var searchText = ""
-    @State private var selectedMedicine: MedicineEntry?
     @State private var amount: Int = 1
-    weak var delegate: PrescriptionMedicineDelegate?
+    @State private var selectedMedicine: MedicineEntry?
+    
+    var onSave: ([PrescriptionMedicine]) -> Void
 
     var body: some View {
         VStack {
@@ -103,7 +104,11 @@ struct PrescriptionMedicineList: View {
                         .foregroundColor(.white)
                         .background(Color.green)
                         .cornerRadius(5)
+//                    NavigationLink(destination: PrescriptionForm(selectedMedicines: $selectedMedicines)) {
+//                                Text("Save")
+//                            }
                 }
+                
             }
             .padding()
         }
@@ -128,11 +133,13 @@ struct PrescriptionMedicineList: View {
 
     private func saveMedicines() {
         // Implement saving logic here
+        let prescriptionMedicines = medicines.map { PrescriptionMedicine(medicine_id: $0.id ?? "", amount_use: $0.amount) }
+             onSave(prescriptionMedicines)
     }
 }
 
 #Preview {
-    PrescriptionMedicineList()
+    PrescriptionMedicineList(onSave: { _ in })
 }
 
 

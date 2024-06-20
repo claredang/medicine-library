@@ -13,8 +13,8 @@ struct PrescriptionForm: View {
     @State private var selectedGenderIndex = 0
     @State private var address = ""
     @State private var symptom = ""
-    @State private var selectedMedicines = [PrescriptionMedicine]()
     let genders = ["Male", "Female", "Other"]
+    @State private var selectedMedicines = [PrescriptionMedicine]()
     
     var body: some View {
         NavigationView {
@@ -35,22 +35,19 @@ struct PrescriptionForm: View {
                 }
                 
                 Section(header: Text("Medicines")) {
-                    NavigationLink(destination: PrescriptionMedicineList())
-                    {
-                            Text("Add medicine")
-                                .padding()
-                                .foregroundColor(.white)
-                                .background(Color.blue)
-                                .cornerRadius(5)
-                        .padding()
+                    NavigationLink(destination: PrescriptionMedicineList(onSave: { medicines in
+                        self.selectedMedicines = medicines
+                    })) {
+                        Text("Add medicine")
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.blue)
+                            .cornerRadius(5)
+                            .padding()
                     }
-                    if !selectedMedicines.isEmpty {
-                        ForEach(selectedMedicines) { medicine in
-                            VStack(alignment: .leading) {
-                                Text("Medicine ID: \(medicine.medicine_id)")
-                                Text("Amount: \(medicine.amount_use)")
-                            }
-                        }
+
+                    ForEach(selectedMedicines) { medicine in
+                        Text("Medicine ID: \(medicine.medicine_id), Amount: \(medicine.amount_use)")
                     }
                 }
                 
